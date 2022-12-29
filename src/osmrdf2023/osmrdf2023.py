@@ -31,6 +31,8 @@ from typing import List, Type
 import xml.etree.ElementTree as XMLElementTree
 from lxml import etree
 
+# __all__ = ["osmrdf_node_xml2ttl", "osmrdf_relation_xml2ttl", "osmrdf_way_xml2ttl", "osmrdf_xmldump2_ttl_v2"]
+
 
 # See also: https://wiki.openstreetmap.org/wiki/Sophox#How_OSM_data_is_stored
 # See also https://wiki.openstreetmap.org/wiki/Elements
