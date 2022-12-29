@@ -198,11 +198,13 @@ class OSMElement:
         self._el_osm_tags = xml_tags
         self._el_osm_nds = xml_nds
         self._el_osm_members = xml_members
+        # if xml_filter is not None:
         self._xml_filter = xml_filter
         self._tagcaster = tagcaster
 
     def can_output(self) -> bool:
-        if not self._xml_filter.can_tag(self._tag):
+        if self._xml_filter is not None and \
+                not self._xml_filter.can_tag(self._tag):
             return False
         return True
 
